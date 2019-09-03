@@ -1,0 +1,22 @@
+#include "apeu.h"
+#include <dirent.h>
+
+int main(int argc , char *argv[]){
+	//한 디렉터리의 모든 파일을 나열하는 프로그램
+
+	DIR *dp;
+	Struct dirent *dirp;
+
+	if(argc !=2)
+		err_quit("usuage: ls directory_name");
+
+	if((dp = opendir(argv[1])) == NULL)
+		err_sys("can't open %s", argv[1]);
+
+	while((dirp = readdir(dp)) != NULL)
+		printf("%s\n",dirp->d_name);
+
+	closedir(dp);
+	exit(0);
+
+}
