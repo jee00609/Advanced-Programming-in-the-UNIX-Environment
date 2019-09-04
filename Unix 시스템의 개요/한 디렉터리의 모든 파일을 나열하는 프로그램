@@ -1,6 +1,9 @@
 #include "apeu.h"
 #include <dirent.h>
 
+//apeu란 Advanced Programming in the Unix Environment 의 약자로
+//
+
 int main(int argc , char *argv[]){
 	//한 디렉터리의 모든 파일을 나열하는 프로그램
 
