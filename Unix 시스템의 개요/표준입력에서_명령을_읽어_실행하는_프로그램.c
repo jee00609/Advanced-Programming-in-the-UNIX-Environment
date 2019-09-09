@@ -1,10 +1,10 @@
-#inlcude "apeu.h"
+#inlcude "apue.h"
 #include <sys/wait.h>
 
 int main(void){
 	//표준 입력에서 명령을 읽어 실행하는 프로그램
 
-	char buf[MAXLINE];	//MAXLINE 은 apue.h 에 정의되어 있다.\
+	char buf[MAXLINE];	//MAXLINE 은 apue.h 에 정의되어 있다.
 	pid_t pid;
 	int status;
 
